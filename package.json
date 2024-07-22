@@ -1,0 +1,41 @@
+{
+  "name": "vite-dev-server-plugin",
+  "version": "0.0.1",
+  "description": "This vite plugin will write HMR to disk",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint --cache .",
+    "test": "vitest"
+  },
+  "keywords": [
+    "vite-plugin",
+    "vite plugin",
+    "dev server",
+    "dev middleware"
+  ],
+  "author": "thanat.wongsamut",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.11",
+    "eslint": "^9.7.0",
+    "tsup": "^8.2.2",
+    "vite": "^5.3.4",
+    "vitest": "^2.0.4"
+  }
+}
